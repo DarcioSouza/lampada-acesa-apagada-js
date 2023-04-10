@@ -1,0 +1,39 @@
+/* Arquivo css criado por Dárcio Souza, exercício lampada JS */
+
+*body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+body .main {
+    width: 400px;
+    height: 100vh;
+    /* border: 2px solid blue; */
+    background-color: #f7f7f7;
+    display: grid;
+    align-content: center;
+    gap: 40px;
+    padding: 0px 40px;
+}
+
+body . main {
+    box-shadow: 2px gray;
+}
+
+body .main .title {
+    text-align: center;
+    gap: 40px;
+}
+
+body .main .title h3 {
+    background-color: yellow;
+    text-transform: uppercase;
+}
