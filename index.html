@@ -13,20 +13,23 @@
         function mudaLampada(valor) {
             if (valor == 1) {
                 arquivo = "assets/lampada-apagada.png";
+                chave = "assets/switch-off.png";
             }
             if (valor == 2) {
                 arquivo = "assets/lampada-acesa.png";
+                chave = "assets/switch-on.png";
             }
             if (valor == 3) {
                 arquivo = "assets/lampada-quebrada.png";
             }
-            // if (!broken) {
-            document.getElementById("lampada").src = arquivo;
-            // if (valor == 3) {
-            //     broken = true;
+            document.getElementById("interruptor").src = chave;
+            if (!quebrada) {
+                document.getElementById("lampada").src = arquivo;
+                if (valor == 3) {
+                    quebrada = true;
 
-            // }
-            // }
+                }
+            }
 
         }
     </script>
@@ -41,7 +44,7 @@
 
 
         <div class="bulb">
-            <img src="/assets/lampada-apagada.png" alt="imagem de lâmpada apagada" id="lampada" onclick="changeBulb">
+            <img src="/assets/lampada-apagada.png" alt="imagem de lâmpada apagada" id="lampada" onclick="mudaLampada(3)">
 
 
         </div>
