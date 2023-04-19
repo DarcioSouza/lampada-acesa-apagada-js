@@ -14,10 +14,12 @@
             if (valor == 1) {
                 arquivo = "assets/lampada-apagada.png";
                 chave = "assets/switch-off.png";
+                interruptor.setAttribute("onclick", "mudaLampada(2)");
             }
             if (valor == 2) {
                 arquivo = "assets/lampada-acesa.png";
                 chave = "assets/switch-on.png";
+                interruptor.setAttribute("onclick", "mudaLampada(1)");
             }
             if (valor == 3) {
                 arquivo = "assets/lampada-quebrada.png";
@@ -50,7 +52,7 @@
         </div>
 
         <div class="switch">
-            <img src="/assets/switch-off.png" alt="" id="interruptor" onclick="mudaLampada(2)" ondblclick="mudaLampada(1)">
+            <img src="/assets/switch-off.png" alt="" id="interruptor" onclick="mudaLampada(2)">
         </div>
 
     </div>

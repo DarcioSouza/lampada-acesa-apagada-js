@@ -11,26 +11,31 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
+    /* background: gray; */
 }
 
 body .main {
     width: 400px;
     height: 100vh;
     /* border: 2px solid blue; */
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     display: grid;
     align-content: center;
     gap: 40px;
     padding: 0px 40px;
 }
 
-body . main {
+body .main {
     box-shadow: 2px gray;
 }
 
 body .main .title {
     text-align: center;
     gap: 40px;
+}
+
+body .main .title h1 {
+    color: #ffffff;
 }
 
 body .main .title h3 {
